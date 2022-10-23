@@ -1,3 +1,6 @@
+import { Routes, Route } from 'react-router-dom';
+import Info from './Info';
+
 const About = () => {
   return (
     <div className='--center-all'>
@@ -5,6 +8,9 @@ const About = () => {
       <p>
         Welcome to the <b>About</b> page
       </p>
+      <Routes>
+        <Route path='info' element={<Info />} />
+      </Routes>
     </div>
   );
 };
